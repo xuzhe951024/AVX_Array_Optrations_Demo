@@ -161,6 +161,7 @@ bool Metrix::operator==(const Metrix &rhs) const {
         for (int j = 0; j < this->wide; ++j) {
             if(this->result[i][j] != rhs.getElement(i, j)){
                 resultEqualsFlag = false;
+                break;
             }
         }
     }
